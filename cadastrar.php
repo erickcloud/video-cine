@@ -72,7 +72,7 @@
 
                   <!-- input capa-->
                 <div class="file-field input-field">
-                    <div class="btn purple lighten-4">
+                    <div class="btn purple lighten-2 black-text" >
                         <span>Capa</span>
                          <input type="file">
                     </div>

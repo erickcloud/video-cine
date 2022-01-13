@@ -28,7 +28,7 @@
             <h1>Video Cine</h1>
     </div>
     <div class="nav-content">
-      <ul class="tabs tabs-transparent grey darken-3">
+      <ul class="tabs tabs-transparent grey darken-2">
         <li class="tab"><a class="active" href="#test1">Todos</a></li>
         <li class="tab"><a href="#test2">Assistidos</a></li>
         <li class="tab"><a href="#test3">Favoritos</a></li>

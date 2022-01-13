@@ -17,7 +17,7 @@
 </head>
 <body>
 
-<nav class="nav-extended purple lighten-3">
+<nav class="nav-extended grey darken-4">
     <div class="nav-wrapper">
         <ul id="nav-mobile" class="right">
           <li><a href="galeria.php">Galeria</a></li>
@@ -28,7 +28,7 @@
             <h1>Video Cine</h1>
     </div>
     <div class="nav-content">
-      <ul class="tabs tabs-transparent purple darken-1">
+      <ul class="tabs tabs-transparent grey darken-3">
         <li class="tab"><a class="active" href="#test1">Todos</a></li>
         <li class="tab"><a href="#test2">Assistidos</a></li>
         <li class="tab"><a href="#test3">Favoritos</a></li>
@@ -72,7 +72,7 @@
 
                   <!-- input capa-->
                 <div class="file-field input-field">
-                    <div class="btn purple lighten-2 black-text" >
+                    <div class="btn grey darken-4 white-text" >
                         <span>Capa</span>
                          <input type="file">
                     </div>
@@ -82,8 +82,8 @@
              </div>
         
               <div class="card-action">
-                  <a class="btn waves-effect waves-light grey" href="galeria.php">Cancelar</a>
-                  <a href="#" class="waves-effect waves-light btn purple">Confirmar</a>
+                  <a class="btn waves-effect grey darken-1" href="galeria.php">Cancelar</a>
+                  <a href="#" class="waves-effect waves-light btn grey darken-4">Confirmar</a>
               </div>
           </div>
       </div>

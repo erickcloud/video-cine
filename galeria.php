@@ -82,7 +82,7 @@
       </div>
 
         <div class="col s3">
-        <div class="card ">
+        <div class="card hoverable">
             <div class="card-image">
             <img src="https://www.themoviedb.org/t/p/w300/A8SP1xPKnq7XunB5Pwwpjm5SrvN.jpg">
             <a class="btn-floating halfway-fab waves-effect waves-light red">

@@ -2,24 +2,31 @@
 
 <?php
 
+$bd = new SQLite3("filmes.db");
+$sql = "SELECT * FROM filmes";
+$filmes = $bd->query($sql);
+
 $filme1 = [
     "titulo"=>"Jobs: O filme",
     "nota" => 10,
     "sinopse" => "A história da ascensão de Steve Jobs, de rejeitado no colégio até tornar-se um dos mais reverenciados empresários do universo da tecnologia no século 20. A trama passa pela jornada de auto descobrimento da juventude, pelos demônios pessoais que obscureceram sua visão e, finalmente, pelos triunfos que transformaram sua vida adulta.",
     "poster" => "https://www.themoviedb.org/t/p/original/5LUplLrA0jeIOKhMie4XU54uAIO.jpg"
 ];
+
 $filme2 = [
     "titulo"=>"Homem-Aranha: Sem Volta para Casa",
     "nota" => 10,
     "sinopse" => "Peter Parker é desmascarado e não consegue mais separar sua vida normal dos grandes riscos de ser um super-herói. Quando ele pede ajuda ao Doutor Estranho, os riscos se tornam ainda mais perigosos, e o forçam a descobrir o que realmente significa ser o Homem-Aranha.",
     "poster" => "https://www.themoviedb.org/t/p/w300/fVzXp3NwovUlLe7fvoRynCmBPNc.jpg"
 ];
+
 $filme3 = [
     "titulo"=>"Star Wars: O livro de Boba Fett",
     "nota" => 10,
     "sinopse" => "Uma emocionante aventura Star Wars que encontra o lendário caçador de recompensas Boba Fett e o mercenário Fennec Shand explorando o submundo da Galáxia quando retornam às areias de Tatooine para reivindicar o território antes governado por Jabba, o Hutt e seu sindicato do crime.",
     "poster" => "https://www.themoviedb.org/t/p/w300/kVelEAAPWMMXCNwsX7YVE8iOlYs.jpg"
 ];
+
 $filme4 = [
     "titulo"=>"Star Wars: O Mandaloriano",
     "nota" => 10,
@@ -27,7 +34,7 @@ $filme4 = [
     "poster" => "https://www.themoviedb.org/t/p/w300/A8SP1xPKnq7XunB5Pwwpjm5SrvN.jpg"
 ];
 
-$filmes = [$filme1 , $filme2, $filme3, $filme4];
+//$filmes = [$filme1 , $filme2, $filme3, $filme4];
 
 ?>
 
@@ -53,8 +60,7 @@ $filmes = [$filme1 , $filme2, $filme3, $filme4];
   </nav>
 
   <div class="row">
-    <?php 
-        foreach($filmes as $filme) : ?>
+    <?php while ($filmes = $filmes->fetchArray()) : ?>
         <div class="col s3">
             <div class="card hoverable">
                 <div class="card-image">
@@ -72,11 +78,11 @@ $filmes = [$filme1 , $filme2, $filme3, $filme4];
                 </div>
             </div>
         </div>
-      <?php endforeach ?>
+      <?php endwhile ?>
+     </div>
 
-  </div>
-</div>
-</div>
+    </div>
+    </div>
 
   
 </body>

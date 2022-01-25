@@ -23,7 +23,7 @@ else
 echo "\nerro ao criar tabela filmes\n"; 
 
 
-$sql = "INSERT INTO filmes (id, titulo, poster, sinopse, nota) VALUE (
+$sql = "INSERT INTO filmes (id, titulo, poster, sinopse, nota) VALUES (
         0,
         'Jobs: O filme',
         'https://www.themoviedb.org/t/p/original/5LUplLrA0jeIOKhMie4XU54uAIO.jpg',
@@ -31,7 +31,7 @@ $sql = "INSERT INTO filmes (id, titulo, poster, sinopse, nota) VALUE (
          reverenciados empresários do universo da tecnologia no século 20. A trama passa pela 
          jornada de auto descobrimento da juventude, pelos demônios pessoais que obscureceram 
          sua visão e, finalmente, pelos triunfos que transformaram sua vida adulta.',
-        10.0
+        9.9
     )";
 
 if ($bd->exec($sql))
@@ -39,7 +39,7 @@ if ($bd->exec($sql))
 else 
 echo "\nerro ao inserir filmes\n"; 
 
-$sql = "INSERT INTO filmes (id, titulo, poster, sinopse, nota) VALUE (
+$sql = "INSERT INTO filmes (id, titulo, poster, sinopse, nota) VALUES (
     1,
     'Homem-Aranha: Sem Volta para Casa',
     'https://www.themoviedb.org/t/p/w300/fVzXp3NwovUlLe7fvoRynCmBPNc.jpg',

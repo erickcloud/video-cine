@@ -22,7 +22,7 @@
   </nav>
   
   <div class="row">
-      <form action="inserirFilme.php">
+      <form action="inserirFilme.php" method="POST">
       <div class="col s6 offset-s3">
           <div class="card">
               <div class="card-content">
@@ -31,7 +31,7 @@
                   <!-- input titulo-->
                   <div class="row">
                      <div class="input-field col s12">
-                        <input id="titulo" type="text" class="validate" name="titulo" require>
+                        <input id="titulo" type="text" class="validate" name="titulo" required>
                         <label for="titulo">Título do Filme</label>
                      </div>
                   </div>
@@ -49,7 +49,7 @@
             <!-- input nota-->
             <div class="row">
                      <div class="input-field col s4">
-                        <input id="nota" name="nota" type="number" step=".1" min=0 max=10 class="validate" require>
+                        <input id="nota" name="nota" type="number" step=".1" min=0 max=10 class="validate" required>
                         <label for="nota">Nota</label>
                      </div>
                   </div>

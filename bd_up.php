@@ -23,8 +23,8 @@ else
 echo "\nerro ao criar tabela filmes\n"; 
 
 
-$sql = "INSERT INTO filmes (id, titulo, poster, sinopse, nota) VALUES (
-        0,
+$sql = "INSERT INTO filmes (titulo, poster, sinopse, nota) VALUES (
+        
         'Jobs: O filme',
         'https://www.themoviedb.org/t/p/original/5LUplLrA0jeIOKhMie4XU54uAIO.jpg',
         'A história da ascensão de Steve Jobs, de rejeitado no colégio até tornar-se um dos mais
@@ -40,7 +40,7 @@ else
 echo "\nerro ao inserir filmes\n"; 
 
 $sql = "INSERT INTO filmes (id, titulo, poster, sinopse, nota) VALUES (
-    1,
+    
     'Homem-Aranha: Sem Volta para Casa',
     'https://www.themoviedb.org/t/p/w300/fVzXp3NwovUlLe7fvoRynCmBPNc.jpg',
     'Peter Parker é desmascarado e não consegue mais separar sua vida normal dos grandes riscos
